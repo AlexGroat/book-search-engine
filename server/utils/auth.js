@@ -37,3 +37,6 @@ module.exports = {
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
 };
+
+
+// activity 26 server utils auth file
