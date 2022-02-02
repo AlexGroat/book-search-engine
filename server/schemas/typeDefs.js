@@ -1,4 +1,8 @@
-const typeDefs = require('./typeDefs');
-const resolvers = require('./resolvers');
+const { gql } = require('apollo-server-express');
 
-module.exports = { typeDefs, resolvers };
+const typeDefs = gql`
+
+
+`
+
+module.exports = typeDefs;
