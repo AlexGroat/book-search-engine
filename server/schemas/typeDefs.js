@@ -13,6 +13,15 @@ const typeDefs = gql`
     removeBook(bookId: String) : User
     }
 
+    input BookSavedInput {
+        bookId: String!
+    authors: [String]
+    description: String!
+    title: String!
+    image: String
+    link: String   
+    }
+
     type User {
     _id: ID
     username: String!
