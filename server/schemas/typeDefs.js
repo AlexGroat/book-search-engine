@@ -33,7 +33,6 @@ const typeDefs = gql`
     link: String   
     }
 
-
     type Query {
     me: User
     }
