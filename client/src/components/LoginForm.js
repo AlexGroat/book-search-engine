@@ -1,11 +1,8 @@
-// see SignupForm.js for comments
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
+import Auth from "../utils/auth";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
-//commented out loginUSer from API File
-// import { loginUser } from '../utils/API';;
-import Auth from "../utils/auth";
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({
@@ -41,6 +38,7 @@ const LoginForm = () => {
       Auth.login(data.login.token);
     } catch (err) {
       console.error(error);
+      setShowAlert(true);
     }
 
     setUserFormData({

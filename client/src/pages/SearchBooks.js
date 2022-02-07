@@ -70,9 +70,9 @@ const SearchBooks = () => {
 
     try {
 
-      const { data } = await saveBook({
+      const response = await saveBook({
         // adding the book data to book to save thru spread operator
-        variables: { bookData: { ...bookToSave }},
+        variables: { input:{ ...bookToSave }},
       });
 
       console.log(savedBookIds)
