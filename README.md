@@ -23,7 +23,7 @@ this means that the server is up and running.
 
 ### Usage
 
-A link to the deployed application is [here](https://dashboard.heroku.com/apps/booksearch-agroat)
+A link to the deployed application is [here](https://booksearch-agroat.herokuapp.com/)
 
 ### Technologies
 
