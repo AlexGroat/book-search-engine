@@ -2,6 +2,7 @@ const { AuthenticationError } = require("apollo-server-express");
 const { User, Book } = require("../models");
 const { signToken } = require("../utils/auth");
 
+console.log('start resolvers')
 const resolvers = {
   Query: {
     me: async (parent, args, context) => {
@@ -60,4 +61,5 @@ const resolvers = {
     },
   },
 };
+console.log('end resolvers')
 module.exports = resolvers;

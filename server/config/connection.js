@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+console.log('mongoose start')
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', {
   useNewUrlParser: true,
@@ -7,4 +8,5 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', {
   useFindAndModify: false,
 });
 
+console.log('mongoose end')
 module.exports = mongoose.connection;
